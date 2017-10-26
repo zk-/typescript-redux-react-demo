@@ -1,0 +1,32 @@
+{
+  "name": "typescript-redux-react-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zk-/typescript-redux-react-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zk-/typescript-redux-react-demo/issues"
+  },
+  "homepage": "https://github.com/zk-/typescript-redux-react-demo#readme",
+  "devDependencies": {
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
+  },
+  "dependencies": {
+    "@types/react": "^16.0.18",
+    "@types/react-dom": "^16.0.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "source-map-loader": "^0.2.3",
+    "ts-loader": "^3.1.0",
+    "typescript": "^2.5.3"
+  }
+}
