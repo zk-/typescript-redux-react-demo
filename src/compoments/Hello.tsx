@@ -5,7 +5,7 @@ export interface Props {
 	enthusiasmLevel?: number;
 	onIncrement?: () => void;
 	onDecrement?: () => void;
-  }
+}
 
 export default class Hello extends React.Component<Props, object> {
 	render() {
