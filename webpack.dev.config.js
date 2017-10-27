@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 module.exports = {
 	entry: "./src/index.tsx",
 	output: {
@@ -18,7 +19,11 @@ module.exports = {
 			{ enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
 		]
 	},
-
+	devServer: {
+		hot: true,
+		publicPath: '/dist/'
+	},
 	plugins: [
+		new webpack.HotModuleReplacementPlugin()
 	],
 };

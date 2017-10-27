@@ -3,7 +3,9 @@ import * as React from 'react';
 export interface Props {
 	name: string;
 	enthusiasmLevel?: number;
-}
+	onIncrement?: () => void;
+	onDecrement?: () => void;
+  }
 
 export default class Hello extends React.Component<Props, object> {
 	render() {
@@ -17,6 +19,10 @@ export default class Hello extends React.Component<Props, object> {
 			<div className="hello">
 				<div className="greeting">
 					Hello {name + getExclamationMarks(enthusiasmLevel)}
+				</div>
+				<div>
+					<button onClick={this.props.onDecrement}>-</button>
+					<button onClick={this.props.onIncrement}>+</button>
 				</div>
 			</div>
 		);
